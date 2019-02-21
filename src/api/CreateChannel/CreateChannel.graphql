@@ -1,0 +1,7 @@
+type CreateChannelResponse {
+  ok: Boolean!
+  error: String
+}
+type Mutation {
+  CreateChannel(channelName: String!): CreateChannelResponse!
+}

@@ -20,6 +20,9 @@ class Message extends BaseEntity {
   @Column({ nullable: false })
   contents: string;
 
+  @Column()
+  innerChannelId: number;
+
   @ManyToOne(type => Channel, channel => channel.messages)
   innerChannel: Channel;
 

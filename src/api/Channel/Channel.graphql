@@ -5,7 +5,3 @@ type Channel {
   createdAt: String!
   updatedAt: String
 }
-
-type Query {
-  channel: Channel
-}

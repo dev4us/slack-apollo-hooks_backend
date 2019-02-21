@@ -20,6 +20,9 @@ class Channel extends BaseEntity {
   @OneToMany(type => Message, message => message.innerChannel)
   messages: Message[];
 
+  @Column({ type: Boolean, default: true })
+  isActive: boolean;
+
   @CreateDateColumn() createdAt: string;
   @UpdateDateColumn() updatedAt: string;
 }
