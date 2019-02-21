@@ -15,22 +15,15 @@ Development low level cloning from 'Slack' with Sexy stack
 
 ### Ready
 
-[x] Setup Dev Environment
-
-[x] Create Postgres DB on Cloud (for deploy on Cloud)
-
-[x] dev Entities and graphql Schema (Message, Channel)
+- [x] Setup Dev Environment
+- [x] Create Postgres DB on Cloud (for deploy on Cloud)
+- [x] dev Entities and graphql Schema (Message, Channel)
 
 ### API
 
-[x] CreateChannel
-
-[x] CreateChannelSubscription
-
-[x] GetChannel
-
-[x] SendMessage
-
-[] GetMessage
-
-[] SendMessageSubscription
+- [x] CreateChannel
+- [x] CreateChannelSubscription
+- [x] GetChannel
+- [x] SendMessage
+- [ ] GetMessage
+- [ ] SendMessageSubscription
