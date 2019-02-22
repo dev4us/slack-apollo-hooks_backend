@@ -1,5 +1,5 @@
-import { Resolvers } from "src/types/resolvers";
-import { GetChannelResponse } from "src/types/graphql";
+import { Resolvers } from "../../../src/types/resolvers";
+import { GetChannelResponse } from "../../../src/types/graphql";
 import Channel from "../../../src/entities/Channel";
 
 const resolvers: Resolvers = {
