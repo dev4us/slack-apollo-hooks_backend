@@ -23,8 +23,8 @@ class Channel extends BaseEntity {
   @Column({ type: Boolean, default: true })
   isActive: boolean;
 
-  @CreateDateColumn() createdAt: string;
-  @UpdateDateColumn() updatedAt: string;
+  @CreateDateColumn({ type: "timestamp" }) createdAt: string;
+  @UpdateDateColumn({ type: "timestamp" }) updatedAt: string;
 }
 
 export default Channel;

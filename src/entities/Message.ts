@@ -26,8 +26,8 @@ class Message extends BaseEntity {
   @ManyToOne(type => Channel, channel => channel.messages)
   innerChannel: Channel;
 
-  @CreateDateColumn() createdAt: string;
-  @UpdateDateColumn() updatedAt: string;
+  @CreateDateColumn({ type: "timestamp" }) createdAt: string;
+  @UpdateDateColumn({ type: "timestamp" }) updatedAt: string;
 }
 
 export default Message;
