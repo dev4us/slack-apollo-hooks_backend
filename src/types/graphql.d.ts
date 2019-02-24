@@ -1,4 +1,4 @@
-export const typeDefs = ["type Channel {\n  id: Int!\n  channelName: String!\n  messages: [Message]\n  createdAt: String!\n  updatedAt: String\n}\n\ntype CreateChannelResponse {\n  ok: Boolean!\n  error: String\n}\n\ntype Mutation {\n  CreateChannel(channelName: String!): CreateChannelResponse!\n  SendMessage(nickname: String!, contents: String!, innerChannelId: Int!): SendMessageResponse!\n}\n\ntype Subscription {\n  CreateChannelSubscription: Channel\n}\n\ntype GetChannelResponse {\n  ok: Boolean!\n  error: String\n  channels: [Channel]\n}\n\ntype Query {\n  GetChannel: GetChannelResponse!\n  GetMessage(innerChannelId: Int!): GetMessageResponse!\n}\n\ntype GetMessageResponse {\n  ok: Boolean!\n  error: String\n  messages: [Message]\n}\n\ntype Message {\n  id: Int!\n  nickname: String!\n  contents: String!\n  innerChannel: Channel!\n  innerChannelId: Int!\n  createdAt: String!\n  updatedAt: String\n}\n\ntype SendMessageResponse {\n  ok: Boolean!\n  error: String\n}\n"];
+export const typeDefs = ["type Channel {\n  id: Int!\n  channelName: String!\n  messages: [Message]\n  createdAt: String!\n  updatedAt: String\n}\n\ntype CreateChannelResponse {\n  ok: Boolean!\n  error: String\n}\n\ntype Mutation {\n  CreateChannel(channelName: String!): CreateChannelResponse!\n  SendMessage(nickname: String!, contents: String!, innerChannelId: Int!): SendMessageResponse!\n}\n\ntype Subscription {\n  CreateChannelSubscription: Channel\n  CreateMessageSubscription: Message\n}\n\ntype GetChannelResponse {\n  ok: Boolean!\n  error: String\n  channels: [Channel]\n}\n\ntype Query {\n  GetChannel: GetChannelResponse!\n  GetMessage(innerChannelId: Int!): GetMessageResponse!\n}\n\ntype GetMessageResponse {\n  ok: Boolean!\n  error: String\n  messages: [Message]\n}\n\ntype Message {\n  id: Int!\n  nickname: String!\n  contents: String!\n  innerChannel: Channel!\n  innerChannelId: Int!\n  createdAt: String!\n  updatedAt: String\n}\n\ntype SendMessageResponse {\n  ok: Boolean!\n  error: String\n}\n"];
 /* tslint:disable */
 
 export interface Query {
@@ -67,4 +67,5 @@ export interface SendMessageResponse {
 
 export interface Subscription {
   CreateChannelSubscription: Channel | null;
+  CreateMessageSubscription: Message | null;
 }

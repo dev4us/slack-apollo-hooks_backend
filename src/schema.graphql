@@ -18,6 +18,7 @@ type Mutation {
 
 type Subscription {
   CreateChannelSubscription: Channel
+  CreateMessageSubscription: Message
 }
 
 type GetChannelResponse {
