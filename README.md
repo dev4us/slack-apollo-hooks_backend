@@ -1,4 +1,5 @@
 # Slack-apollo-hooks
+![slack](https://user-images.githubusercontent.com/19645646/53336624-2dc4ae80-3942-11e9-80ac-e20c50fecce4.png)
 
 Development low level cloning from 'Slack' with Sexy stack
 
