@@ -24,5 +24,5 @@ Development low level cloning from 'Slack' with Sexy stack
 - [x] CreateChannelSubscription
 - [x] GetChannel
 - [x] SendMessage
-- [ ] GetMessage
-- [ ] SendMessageSubscription
+- [x] GetMessage
+- [x] SendMessageSubscription
